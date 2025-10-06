@@ -44,49 +44,49 @@ const games = [
     },
     {
         id: 4,
-        title: "The Witcher 3: Wild Hunt",
-        shortDescription: "Em busca da criança da profecia, em um mundo aberto repleto de decisões morais.",
-        fullDescription: "The Witcher 3: Wild Hunt é um RPG de mundo aberto que coloca você no papel de Geralt de Rivia, um bruxo caçador de monstros. Em uma jornada épica para encontrar sua filha adotiva, Ciri, você explorará um continente devastado pela guerra, tomará decisões que moldam o mundo ao seu redor e enfrentará criaturas perigosas. Com uma narrativa rica, personagens memoráveis e um mundo vibrante, The Witcher 3 é considerado um dos melhores RPGs já feitos.",
+        title: "Dark Souls III",
+        shortDescription: "Prepare-se para a morte a cada passo, Renascido das cinzas, lute para acender a chama.",
+        fullDescription: "Um ser sem identidade luta para perpetuar a vida em um mundo em que o fim iminente do ciclo da chama se aproxima. Enfretando deuses e dragoes, o jogador deve descobrir a verdade por trás do crepúsculo dos deuses e decidir o destino do mundo. Com um combate desafiador, um mundo interconectado e uma narrativa profunda, Dark Souls III é a culminação da série Souls, oferecendo uma experiência inesquecível para os fãs de RPG de ação.",
         genre: "RPG",
         rating: 4.95,
         releaseYear: 2015,
         developer: "CD Projekt Red",
         publisher: "CD Projekt",
         platforms: ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
-        image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
+        image: "DS3.jpg",
         features: ["Mundo aberto vasto", "História não linear", "Sistema de alquimia", "Caça a monstros"]
     },
     {
         id: 5,
-        title: "Red Dead Redemption 2",
-        shortDescription: "A vida no velho oeste nunca foi fácil, especialmente para um fora da lei.",
-        fullDescription: "Red Dead Redemption 2 é um épico do velho oeste que narra a história de Arthur Morgan e da gangue Van der Linde enquanto fogem das forças da lei. Em um mundo aberto imersivo, você viverá a vida de um fora da lei, tomando decisões que afetam seu destino e o das pessoas ao seu redor. Com gráficos deslumbrantes, uma narrativa profunda e uma atenção incrível aos detalhes, RDR2 é uma experiência inesquecível.",
-        genre: "Ação e Aventura",
+        title: "Nier Automata",
+        shortDescription: "Um conto de androides e máquinas em um mundo pós-apocalíptico.",
+        fullDescription: "Nier Automata é um RPG de ação que se passa em um mundo devastado por uma guerra entre androides e máquinas. Com uma narrativa profunda e filosófica, o jogo explora temas de existência, consciência e a natureza da humanidade. Os jogadores assumem o papel de 2B, uma androida enviada para combater as máquinas e descobrir a verdade por trás da guerra. Com um sistema de combate dinâmico e uma trilha sonora aclamada, Nier Automata é uma experiência única e inesquecível.",
+        genre: "Ação e RPG",
         rating: 4.8,
         releaseYear: 2018,
-        developer: "Rockstar Games",
-        publisher: "Rockstar Games",
+        developer: "PlatinumGames",
+        publisher: "Square Enix",
         platforms: ["PC", "PlayStation 4", "Xbox One"],
-        image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-        features: ["Mundo aberto realista", "Sistema de honra", "Atividades diversificadas", "História emocionante"]
+        image: "Nier-Automata.jpg",
+        features: ["Mundo aberto realista", "Sistema de Karma", "Atividades diversificadas", "História emocionante"]
     },
     {
         id: 6,
-        title: "God of War (2018)",
-        shortDescription: "A jornada de um pai e seu filho pelos reinos nórdicos em busca de respostas.",
-        fullDescription: "God of War (2018) reinventa a franquia, levando Kratos para o mundo da mitologia nórdica. Agora como pai, ele deve guiar seu filho Atreus em uma jornada perigosa enquanto lida com seu passado violento. Com um sistema de combate visceral, uma narrativa emocionante sobre paternidade e um mundo interconectado para explorar, God of War é uma obra-prima que redefine o que um jogo de ação pode ser.",
-        genre: "Ação e Aventura",
+        title: "Metal Gear Solid V: The Phantom Pain",
+        shortDescription: " Kept you waiting, huh? Venom snake descobre a verdade por trás da sua missão de vingança.",
+        fullDescription: "Metal Gear Solid V: The Phantom Pain é um jogo de ação e stealth que se passa em um mundo aberto durante a Guerra Fria. Os jogadores assumem o papel de Venom Snake, um mercenário que busca vingança contra aqueles que destruíram sua base e deixaram-no em coma. Com uma jogabilidade inovadora, gráficos impressionantes e uma narrativa envolvente, o jogo explora temas de guerra, traição e redenção.",
+        genre: "Ação e Stealth",
         rating: 4.9,
         releaseYear: 2018,
-        developer: "Santa Monica Studio",
-        publisher: "Sony Interactive Entertainment",
-        platforms: ["PC", "PlayStation 4"],
-        image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80",
-        features: ["Câmera em plano-sequência", "Combate com machado leviatã", "Exploração dos reinos nórdicos", "Narrativa sobre paternidade"]
+        developer: "Kojima Productions",
+        publisher: "Konami",
+        platforms: ["PC", "PlayStation 4", "Xbox One"],
+        image: "metalgear.jpg",
+        features: ["Câmera em plano-sequência", "Combate tático", "Exploração de mundo aberto", "Narrativa sobre guerra, filosofia e companheirismo"]
     }
 ];
 
-// Função para carregar os jogos na página inicial
+// Função para carregar os jogos na página iicial
 function loadGames() {
     const gamesContainer = document.getElementById('games-container');
     
