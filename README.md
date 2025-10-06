@@ -16,8 +16,8 @@ Leia o enunciado completo no Canvas.
 
 - Nome: Juan Pablo Marcelino Rocha 
 - Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Proposta de projeto escolhida: Site de games
+- Breve descrição sobre seu projeto: Site focado em reviews de games
 
 ## Print da Home-Page
 
