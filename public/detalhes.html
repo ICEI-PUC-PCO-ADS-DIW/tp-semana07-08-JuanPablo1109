@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Jogo - GameVault</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #550606;
+            --secondary: #550606;
+            --accent: #fd79a8;
+            --dark: #000000;
+            --light: #dfe6e9;
+            --success: #00b894;
+            --warning: #fdcb6e;
+            --danger: #d63031;
+            --card-bg: #1e272e;
+            --header-bg: rgba(30, 39, 46, 0.95);
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e272e 0%, #000000 100%);
+            color: var(--light);
+            line-height: 1.6;
+            padding-top: 76px;
+        }
+
+        .navbar {
+            background: var(--header-bg);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: var(--light) !important;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary) !important;
+        }
+
+        .game-detail-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-detail-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .game-meta-badge {
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .game-rating {
+            color: var(--warning);
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        .back-button {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .back-button:hover {
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer-desc {
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: var(--primary);
+        }
+
+        .footer-heading {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--primary);
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header com Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-gamepad me-2"></i>GameVault
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lançamentos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-login me-2">Entrar</button>
+                    <button class="btn btn-signup">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Game Details Section -->
+    <section class="game-details py-5">
+        <div class="container">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left me-2"></i>Voltar para a lista
+            </a>
+            <div id="game-details-container">
+                <!-- Os detalhes do jogo serão carregados dinamicamente aqui pelo app.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-info">
+                        <div class="footer-logo">GameVault</div>
+                        <p class="footer-desc">O melhor catálogo de jogos para encontrar sua próxima aventura digital.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="footer-heading">Links Rápidos</h3>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="#">Jogos</a></li>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="#">Lançamentos</a></li>
+                        <li><a href="#">Sobre nós</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="footer-heading">Suporte</h3>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h3 class="footer-heading">Plataformas</h3>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">PC</a></li>
+                        <li><a href="#">PlayStation</a></li>
+                        <li><a href="#">Xbox</a></li>
+                        <li><a href="#">Nintendo</a></li>
+                        <li><a href="#">Mobile</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 GameVault. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- App JS -->
+    <script src="app.js"></script>
+</body>
+</html>
